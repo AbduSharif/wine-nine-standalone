@@ -54,13 +54,13 @@ This part assumes that you downloaded a release binary or compiled using `releas
 
 The latter symlinks the extracted binaries to your WINE prefix and enables Gallium Nine Standalone. To target another WINE prefix than the standard ``~/.wine``, just set ``WINEPREFIX`` accordingly before you run ``nine-install.sh``.
 
-Gallium Nine Standalone comes with a GUI.
-
-On Debian 13 Trixie (and some other distros' latest releases) you will get the 64bit version of Wine and you would run the Gallium Nine GUI with ``wine ninewinecfg``.
-
 On debian 13 and Ubuntu...etc you need the D3D9 state tracker to get Gallium Nine to work so run this command for its installation: ``sudo apt install libd3dadapter9-mesa libd3dadapter9-mesa:i386``.
 
 Make sure you have 32bit versions of the common rendering libraries and most wine stuff at least (I don't know exactly which 32bit are relied on but its good to have as much as possible covered).
+
+Gallium Nine Standalone comes with a GUI.
+
+On Debian 13 Trixie (and some other distros' latest releases) you will get the 64bit version of Wine and so you would run the Gallium Nine GUI with ``wine ninewinecfg``.
 
 Compiling
 ---------
