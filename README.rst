@@ -56,7 +56,11 @@ The latter symlinks the extracted binaries to your WINE prefix and enables Galli
 
 Gallium Nine Standalone comes with a GUI.
 
-For the 32bit version run ``wine ninewinecfg`` and for 64bit ``wine64 ninewinecfg``.
+On Debian 13 Trixie (and some other distros' latest releases) you will get the 64bit version of Wine and you would run the Gallium Nine GUI with ``wine ninewinecfg``.
+
+On debian 13 and Ubuntu you need the state trackers so run this command to get it: ``sudo apt install libd3dadapter9-mesa libd3dadapter9-mesa:i386``.
+
+Make sure you have 32bit versions of the common rendering libraries and most wine stuff at least (I don't know exactly which 32bit are relied on but its good to have as much as possible covered).
 
 Compiling
 ---------
